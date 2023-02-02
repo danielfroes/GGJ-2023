@@ -23,6 +23,8 @@ namespace Assets.Scripts
         {
             _button.onClick.AddListener(() => Instantiate(_hiddenObjectPrefab));
         }
+        
+
 
     }
 }
