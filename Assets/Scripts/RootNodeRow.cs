@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class RootNodeRow : MonoBehaviour  
+    public class RootNodeRow : MonoBehaviour
     {
         [SerializeField] List<RootNode> _nodes = new();
 
@@ -16,6 +15,11 @@ namespace Assets.Scripts
         public void Show(int selectedNodeIndex)
         {
             _nodes[selectedNodeIndex].Show();
+        }
+
+        public void ShowAll()
+        {
+            _nodes.ForEach(node => node.Show());
         }
     }
 }

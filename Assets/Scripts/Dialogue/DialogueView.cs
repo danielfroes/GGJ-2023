@@ -10,6 +10,7 @@ namespace Assets.Scripts.Dialogue
         public event Action OnContinueButton;
 
         [SerializeField] Image _thumb;
+        [SerializeField] TextMeshProUGUI _title;
         [SerializeField] TextMeshProUGUI _text;
         [SerializeField] Button _continue;
 
@@ -22,7 +23,8 @@ namespace Assets.Scripts.Dialogue
         public void SetDialogue(DialogueEntry dialogue)
         {
             _text.SetText(dialogue.Text);
-            _thumb.sprite = dialogue.Thumb;
+            _title.SetText(dialogue.Character.Title);
+            _thumb.sprite = dialogue.Character.Thumb;
         }
 
         public void Hide()

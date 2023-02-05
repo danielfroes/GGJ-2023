@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -10,25 +9,27 @@ namespace Assets.Scripts
 
         int _currentRow = 0;
 
-        public void EnableNextRowSelection(int choosenNode)
+        public void EnableNextRowSelection()
         {
             _currentRow++;
             if (_currentRow >= _rows.Count)
             {
-                Debug.Log("End Game");
+                TriggerEnding();
                 return;
             }
 
-            _rows[_currentRow].Show(choosenNode);
+            _rows[_currentRow].ShowAll();
+        }
+
+        private void TriggerEnding()
+        {
+            Debug.Log("End Game");
         }
 
         private void Start()
         {
             _rows.ForEach(row => row.HideAll());
-            _rows[0].Show(0);
+            _rows[0].ShowAll();
         }
-
-
-        
     }
 }

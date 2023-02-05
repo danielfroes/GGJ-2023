@@ -21,10 +21,13 @@ namespace Assets.Scripts
 
         void Start()
         {
-            _button.onClick.AddListener(() => Instantiate(_hiddenObjectPrefab));
+            _button.onClick.AddListener(SelectNode);
         }
-        
 
-
+        void SelectNode()
+        {
+            Instantiate(_hiddenObjectPrefab);
+            
+        }
     }
 }

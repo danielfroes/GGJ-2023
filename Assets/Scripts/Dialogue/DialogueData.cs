@@ -16,6 +16,6 @@ namespace Assets.Scripts.Dialogue
     public struct DialogueEntry
     {
         [ResizableTextArea] public string Text;
-        [ShowAssetPreview] public Sprite Thumb;
+        public CharacterDialogueData Character;
     }
 }
