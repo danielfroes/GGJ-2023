@@ -11,12 +11,12 @@ namespace Assets.Scripts
 
         public void Hide()
         {
-            gameObject.SetActive(false);
+            _button.interactable = false;
         }
 
         public void Show()
         {
-            gameObject.SetActive(true);
+            _button.interactable = true;
         }
 
         void Start()
@@ -26,8 +26,8 @@ namespace Assets.Scripts
 
         void SelectNode()
         {
+            Hide();
             Instantiate(_hiddenObjectPrefab);
-            
         }
     }
 }

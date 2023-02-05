@@ -5,20 +5,20 @@ namespace Assets.Scripts
 {
     public class RootsSelectionController : Singleton<RootsSelectionController>
     {
-        [SerializeField] List<RootNodeRow> _rows = new();
+        [SerializeField] List<RootNode> _nodes = new();
 
-        int _currentRow = 0;
+        int _currentNode = 0;
 
         public void EnableNextRowSelection()
         {
-            _currentRow++;
-            if (_currentRow >= _rows.Count)
+            _currentNode++;
+            if (_currentNode >= _nodes.Count)
             {
                 TriggerEnding();
                 return;
             }
 
-            _rows[_currentRow].ShowAll();
+            _nodes[_currentNode].Show ();
         }
 
         private void TriggerEnding()
@@ -28,8 +28,8 @@ namespace Assets.Scripts
 
         private void Start()
         {
-            _rows.ForEach(row => row.HideAll());
-            _rows[0].ShowAll();
+            _nodes.ForEach(node => node.Hide());
+            _nodes[0].Show();
         }
     }
 }

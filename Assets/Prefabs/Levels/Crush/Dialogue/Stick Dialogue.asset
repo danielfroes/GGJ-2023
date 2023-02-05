@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a4338afbefcaf84fbc4dddb75744bfa, type: 3}
+  m_Name: Stick Dialogue
+  m_EditorClassIdentifier: 
+  _entries:
+  - Text: 'I remember that during our first date, I stumbled upon a beautiful piece
+      of driftwood on the lake shore. I decided to use it to draw a heart in the
+      sand. Every time we visited that place, we would hide the driftwood and search
+      for it again, rekindling the excitement of that first day. '
+    Character: {fileID: 11400000, guid: 2748f0895a82e964590a9acbccc3b42d, type: 2}
+  - Text: The driftwood, now weather-worn and smooth from the constant handling,
+      will always be a reminder of the love we share and the journey we had together
+    Character: {fileID: 11400000, guid: 2748f0895a82e964590a9acbccc3b42d, type: 2}
