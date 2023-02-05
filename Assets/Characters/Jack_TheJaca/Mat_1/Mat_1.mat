@@ -23,14 +23,12 @@ Material:
   m_Name: Mat_1
   m_Shader: {fileID: 4800000, guid: e88aeddd2ef1f934d805981244872e27, type: 3}
   m_ValidKeywords:
-  - _FACE_SHADOW_MAP
   - _HALFTONESHAPE_DOT
   - _NORMALMAP
   - _OUTLINE
   - _RIMLIGHTING_ON
   - _SPECULAR_COLOR
   m_InvalidKeywords:
-  - _ENABLEDHAIRSPEC_ON
   - _HAFTONESHAPES_DOT
   - _OCCLUSIONMAP
   - _SPECULARHIGHLIGHTS_OFF
@@ -165,9 +163,9 @@ Material:
     - _DitherTexelSize: 1
     - _DitherThreshold: 1
     - _DstBlend: 0
-    - _EnabledHairSpec: 1
+    - _EnabledHairSpec: 0
     - _EnvironmentReflections: 1
-    - _FaceShadowMapEnabled: 1
+    - _FaceShadowMapEnabled: 0
     - _FaceShadowMapPow: 0.2
     - _FaceShadowSmoothness: 0.1
     - _FlattenGI: 0
@@ -197,10 +195,10 @@ Material:
     - _HalftoneUseScreenSpaceUV: 0
     - _HatchingDensity: 1.43
     - _HatchingDiffuseOffset: -0.3
-    - _HatchingDrawStrength: 9.87
+    - _HatchingDrawStrength: 6.97
     - _HatchingEnabled: 0
     - _HatchingRotation: 5.1
-    - _HatchingSmoothness: 1
+    - _HatchingSmoothness: 0.222
     - _Metallic: 0
     - _NoiseScale: 1
     - _NoiseStrength: 0.1
@@ -251,7 +249,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.5}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FaceFrontDirection: {r: 0, g: 0, b: 1, a: 0}
@@ -259,12 +257,12 @@ Material:
     - _HairSpecColor: {r: 0, g: 0, b: 0, a: 1}
     - _HalfToneColor: {r: 0.38681513, g: 0.4433962, b: 0, a: 0.676}
     - _HalftoneColor: {r: 0.509434, g: 0.31008753, b: 0.10332859, a: 0.262}
-    - _HatchingColor: {r: 0.31004664, g: 0.33962262, b: 0.09451762, a: 1}
+    - _HatchingColor: {r: 0.415542, g: 0.46226418, b: 0.22459063, a: 1}
     - _HatchingScale: {r: 15, g: 1, b: 0, a: 0}
     - _OutlineColor: {r: 0.3962264, g: 0.22440565, b: 0.08410467, a: 1}
     - _OutlineDistancFade: {r: -49.93296, g: 16.819649, b: 0, a: 0}
     - _RimColor: {r: 0.9150943, g: 0.7201196, b: 0.34100214, a: 1}
     - _ShadowColor: {r: 0.3584906, g: 0.28458244, b: 0, a: 0.231}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 0.5}
+    - _SpecColor: {r: 0.1981132, g: 0.08690815, b: 0.18432643, a: 0.5}
     - _SpherizeNormalOrigin: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
