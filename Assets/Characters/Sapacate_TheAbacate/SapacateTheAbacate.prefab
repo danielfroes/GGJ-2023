@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1750327129468626704}
   - component: {fileID: 6316755693405682658}
   - component: {fileID: 3436741533579382298}
+  - component: {fileID: 6439063950446299592}
   m_Layer: 0
   m_Name: sapacate_01
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6439063950446299592
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222369489864569588}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -662201602954311748, guid: f3175fa6db57812429d696616df4475e, type: 3}
 --- !u!1 &8244838890944887870
 GameObject:
   m_ObjectHideFlags: 0
