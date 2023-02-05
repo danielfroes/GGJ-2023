@@ -642,6 +642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5358164162260101458, guid: c6dbee5c11260f04d867c47a3f834c75, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.090454
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6dbee5c11260f04d867c47a3f834c75, type: 3}
 --- !u!1001 &8303891718270044541
@@ -782,6 +786,6 @@ PrefabInstance:
     - target: {fileID: 9221490963245209345, guid: b8f14299d8bf24c49a72cd24f503025f, type: 3}
       propertyPath: _hiddenObjectPrefab
       value: 
-      objectReference: {fileID: 1274228588286945918, guid: 351c85ca11b6d914cb3c7cce35ea7398, type: 3}
+      objectReference: {fileID: 1274228588286945918, guid: 762e341c8fa0fb24ebbcc6a23dd4b9b2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8f14299d8bf24c49a72cd24f503025f, type: 3}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a4338afbefcaf84fbc4dddb75744bfa, type: 3}
+  m_Name: Drawing dialogue
+  m_EditorClassIdentifier: 
+  _entries:
+  - Text: 'It didn''t look like it at the time, but I really loved our lunch breaks.
+      I think that was when we really got to know each other. It was in one of those
+      that I found out that you were quite the artist! '
+    Character: {fileID: 11400000, guid: d3e239b9ed811d5409e891d41f106aba, type: 2}
+  - Text: 'I''ll never forget the day you felt comfortable showing me one of your
+      drawings. The one with that one fruit. So beautiful. I could almost feel your
+      feelings through the painting. '
+    Character: {fileID: 11400000, guid: d3e239b9ed811d5409e891d41f106aba, type: 2}
