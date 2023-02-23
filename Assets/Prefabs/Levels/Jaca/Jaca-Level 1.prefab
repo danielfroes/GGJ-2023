@@ -504,7 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 6149643674330794305}
-  _dialogue: {fileID: 11400000, guid: b28ba6e5469a66e4eae119bb56e9cbda, type: 2}
+  _dialogue: {fileID: 11400000, guid: 0dace8236c7b2be4db09da79552f773a, type: 2}
 --- !u!1 &2333140161777960659
 GameObject:
   m_ObjectHideFlags: 0

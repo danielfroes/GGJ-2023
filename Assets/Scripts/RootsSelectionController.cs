@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts
 {
@@ -23,7 +24,7 @@ namespace Assets.Scripts
 
         private void TriggerEnding()
         {
-            Debug.Log("End Game");
+            SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
         }
 
         private void Start()

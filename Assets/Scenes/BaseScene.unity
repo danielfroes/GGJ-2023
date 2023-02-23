@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 673404163}
-  m_IndirectSpecularColor: {r: 0.36264527, g: 0.6380597, b: 0.6312155, a: 1}
+  m_IndirectSpecularColor: {r: 0.36264482, g: 0.63806236, b: 0.63121676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1893,6 +1893,82 @@ PrefabInstance:
     - target: {fileID: 4234074659976442500, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234074660371680649, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234074660371680649, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234074660371680649, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234074660522386740, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_text
+      value: "Death doesn't need to be sad.\r\nIt can be a new beginning: not only
+        for the fruit that becomes a seed and may give life to a tree but also for
+        those who need to figure out a new way of enjoying life.\r\nIt doesn't mean
+        those who leave us have to be forgotten. \r\nOur loved ones' trees will always
+        grow stronger when nourished by our fruitful memories."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234074660522386741, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234074660522386741, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234074660522386741, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234074660522386741, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234074660522386741, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4234074660522386741, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057777902334967100, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.9053125
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057777902334967100, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.64533335
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057777902334967100, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5936875
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057777902334967100, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.363
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057777902334967100, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057777902334967100, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057777902334967100, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057777902334967100, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4835b6f8a553b3919927cc04343c99a3, type: 3}
