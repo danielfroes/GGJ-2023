@@ -272,6 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _steps:
   - rid: 1920387729737908224
+  - rid: 1920387774328602624
   references:
     version: 2
     RefIds:
@@ -279,7 +280,10 @@ MonoBehaviour:
       type: {class: ScreenServiceInitializer, ns: Assets.Scripts.Initialization, asm: ScreenService}
       data:
         _canvasPrefab: {fileID: 2803483483858151282, guid: ce784b0a672a7c94ca9dc51ffe80a09c, type: 3}
-        _screens: []
+        _screens:
+        - {fileID: 11400000, guid: 4d3c97d7c38f07b42af33ed45c63ebb7, type: 2}
+    - rid: 1920387774328602624
+      type: {class: TriggerTitleScreen, ns: Assets.Scripts.InitializationSteps, asm: Assembly-CSharp}
 --- !u!4 &1733840578
 Transform:
   m_ObjectHideFlags: 0
