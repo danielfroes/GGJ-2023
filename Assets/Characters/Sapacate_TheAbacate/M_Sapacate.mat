@@ -205,7 +205,7 @@ Material:
     - _OcclusionStrength: 1
     - _OutlineEnabled: 1
     - _OutlineMode: 0
-    - _OutlineWidth: 12
+    - _OutlineWidth: 7
     - _OverrideShadowColor: 0
     - _Parallax: 0.005
     - _QueueControl: -1
@@ -216,7 +216,7 @@ Material:
     - _RimLightAlign: -0.06
     - _RimLightSmoothness: 0.308
     - _RimLightSmootness: 0.241
-    - _RimPower: 0.303
+    - _RimPower: 0.539
     - _SPECULARHIGHTLIGHTS: 0
     - _ShadowPatternSize: 0.3
     - _Shininess: 0
