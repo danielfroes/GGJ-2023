@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a4338afbefcaf84fbc4dddb75744bfa, type: 3}
+  m_Name: Skate
+  m_EditorClassIdentifier: 
+  _entries:
+  - Text: 'You were always surrounded by friends. And quite different ones I must
+      say. There was that Jack Fruit from work, some apples and pears from school. '
+    Character: {fileID: 11400000, guid: c9df9fae7612cb24eae87ae39bc10817, type: 2}
+  - Text: 'You would even skate around the village with some grapes you met somewhere.
+      But here''s a decision I''m glad I made: I thought about sending you to a Cashew-only
+      school. That would probably have crushed you.'
+    Character: {fileID: 11400000, guid: c9df9fae7612cb24eae87ae39bc10817, type: 2}

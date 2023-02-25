@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 673404163}
-  m_IndirectSpecularColor: {r: 0.35935792, g: 0.65103734, b: 0.6366304, a: 1}
+  m_IndirectSpecularColor: {r: 0.35935792, g: 0.65104073, b: 0.6366326, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2332,10 +2332,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 210939857}
     m_Modifications:
+    - target: {fileID: 853718362962607937, guid: 5744ce19104c4ad43b69130e0829f695, type: 3}
+      propertyPath: _hiddenObjectPrefab
+      value: 
+      objectReference: {fileID: 1274228588286945918, guid: 2e99f9e3450823744927b91fc490f559, type: 3}
+    - target: {fileID: 2700503194828281221, guid: 5744ce19104c4ad43b69130e0829f695, type: 3}
+      propertyPath: _hiddenObjectPrefab
+      value: 
+      objectReference: {fileID: 1274228588286945918, guid: 76079174c1580804781ba8600c0ef973, type: 3}
     - target: {fileID: 5076258032916732209, guid: 5744ce19104c4ad43b69130e0829f695, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7525380807143510109, guid: 5744ce19104c4ad43b69130e0829f695, type: 3}
+      propertyPath: _hiddenObjectPrefab
+      value: 
+      objectReference: {fileID: 1274228588286945918, guid: 0c7f7b41a49fdea41b585983b028299f, type: 3}
     - target: {fileID: 7664863698773915088, guid: 5744ce19104c4ad43b69130e0829f695, type: 3}
       propertyPath: m_Name
       value: Roots_UI

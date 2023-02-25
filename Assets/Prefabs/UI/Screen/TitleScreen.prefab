@@ -226,8 +226,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isStackable: 1
-  _playButton: {fileID: 0}
-  _quitButton: {fileID: 0}
+  _playButton: {fileID: 5260743141887858911}
+  _quitButton: {fileID: 3900276275110196072}
   _gameScene: 1
 --- !u!1 &5283388622578138454
 GameObject:

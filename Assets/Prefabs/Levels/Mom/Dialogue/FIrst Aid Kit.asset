@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a4338afbefcaf84fbc4dddb75744bfa, type: 3}
+  m_Name: FIrst Aid Kit
+  m_EditorClassIdentifier: 
+  _entries:
+  - Text: 'I''ll never understand why the holy Gourd did that to us. You were always
+      so strong and healthy. The most powerful woman I''ve ever met. Even after you
+      got sick you tried to look strong to make us feel better. '
+    Character: {fileID: 11400000, guid: c9df9fae7612cb24eae87ae39bc10817, type: 2}
+  - Text: ' Your disease brought us closer, me, you, and your loved one.
+
+      Every
+      day I wished we had more time. But soon my seed will be here close to yours
+      and your dad''s.'
+    Character: {fileID: 11400000, guid: c9df9fae7612cb24eae87ae39bc10817, type: 2}

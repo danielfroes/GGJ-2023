@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a4338afbefcaf84fbc4dddb75744bfa, type: 3}
+  m_Name: Family Photos
+  m_EditorClassIdentifier: 
+  _entries:
+  - Text: 'I was very proud of our family and liked to keep pictures of us all over
+      the house. We were all cashews and very looked a lot like each other. Not only
+      visually, I mean, with everything. '
+    Character: {fileID: 11400000, guid: c9df9fae7612cb24eae87ae39bc10817, type: 2}
+  - Text: " We liked the same activities, foods, places\u2026 You never did, though.
+      My sisters would often tell me you were \u201Cweird\u201D or \u201Crebel\u201D. 
+      Today I feel bad I was more frustrated at you than I was at them."
+    Character: {fileID: 11400000, guid: c9df9fae7612cb24eae87ae39bc10817, type: 2}
