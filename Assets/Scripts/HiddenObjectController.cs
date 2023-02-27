@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using Assets.Scripts.Dialogue;
+using Cysharp.Threading.Tasks;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Scripts
 {
@@ -10,9 +13,14 @@ namespace Assets.Scripts
         [SerializeField] GameObject _itemsViewGroup;
         [SerializeField] HiddenItemViewCell _itemViewCellPrefab;
 
+        [SerializeField] GameObject _highlightBackground;
+        [SerializeField] Image _highligthImage;
+
         private void Start()
         {
             _items.ForEach(item => item.OnFound += FindItem);
+
+            _highlightBackground.SetActive(false);
 
             PopulateUi();
         }
@@ -26,8 +34,18 @@ namespace Assets.Scripts
             }
         }
 
-        private void FindItem(HiddenItem item)
+        private void FindItem(HiddenItem item) => FindItemAsync(item).Forget();
+
+        async UniTaskVoid FindItemAsync(HiddenItem item)
         {
+            if (item.Dialogue != null)
+            {
+                _highligthImage.sprite = item.Sprite;
+                _highlightBackground.SetActive(true);
+                await DialogueManager.Instance.ShowDialogue(item.Dialogue);
+                _highlightBackground.SetActive(false);
+            }
+
             CheckForWinCondition();
         }
 

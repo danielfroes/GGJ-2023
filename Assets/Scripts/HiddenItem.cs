@@ -13,26 +13,22 @@ namespace Assets.Scripts
         [SerializeField] DialogueData _dialogue;
 
         public bool Found { get; private set; }
+        public DialogueData Dialogue => _dialogue;
         public Sprite Sprite => _image.sprite;
 
         public event Action<HiddenItem> OnFound;
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            FindItemAsync().Forget();
+            FindItem();
         }
 
-        async UniTask FindItemAsync()
+        void FindItem()
         {
             if (Found)
                 return;
 
             Found = true;
-
-            if (_dialogue != null)
-            {
-                await DialogueManager.Instance.ShowDialogue(_dialogue);
-            }
 
             gameObject.SetActive(false); 
             OnFound?.Invoke(this);
