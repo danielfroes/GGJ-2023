@@ -1,4 +1,5 @@
 ﻿
+using Assets.Scripts.Utils;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,7 +16,18 @@ namespace Assets.Scripts.Screens
         
         void Start()
         {
-            _playButton.onClick.AddListener(() => SceneManager.LoadScene(_gameScene));
+            _playButton.onClick.AddListener(() =>
+            {
+                TransitionService transitionService = ServiceLocator.Get<TransitionService>();
+                transitionService.BlackoutTransition(() =>
+                {
+                    SceneManager.LoadScene(_gameScene, LoadSceneMode.Additive);
+                    CloseScreen();
+                }).Forget();
+            });
+            
+            
+            
             _quitButton.onClick.AddListener(() => Application.Quit());
         }
 

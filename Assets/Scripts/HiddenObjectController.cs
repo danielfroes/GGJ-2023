@@ -20,7 +20,7 @@ namespace Assets.Scripts
         {
             _items.ForEach(item => item.OnFound += FindItem);
 
-            _highlightBackground.SetActive(false);
+            _highlightBackground.SetActive(false);  
 
             PopulateUi();
         }
