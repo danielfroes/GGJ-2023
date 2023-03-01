@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Assets.Scripts.Utils;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,12 +20,15 @@ namespace Assets.Scripts
                 return;
             }
 
-            _nodes[_currentNode].Show ();
+            _nodes[_currentNode].Show();
         }
 
         private void TriggerEnding()
         {
-            SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
+            ServiceLocator.Get<TransitionService>().BlackoutTransition(() =>
+            {
+                SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
+            }).Forget();
         }
 
         private void Start()

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.Utils;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,7 +28,10 @@ namespace Assets.Scripts
         void SelectNode()
         {
             Hide();
-            Instantiate(_hiddenObjectPrefab);
+            ServiceLocator.Get<TransitionService>().BlackoutTransition(() =>
+            {
+                Instantiate(_hiddenObjectPrefab);
+            }).Forget();
         }
     }
 }
