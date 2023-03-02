@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Dialogue;
+using Assets.Scripts.Utils;
 using Cysharp.Threading.Tasks;
 using System.Collections.Generic;
 using UnityEngine;
@@ -46,14 +47,19 @@ namespace Assets.Scripts
                 _highlightBackground.SetActive(false);
             }
 
-            CheckForWinCondition();
+            CheckForWinCondition().Forget();
         }
 
-        private void CheckForWinCondition()
+        private async UniTaskVoid CheckForWinCondition()
         {
             if (_items.TrueForAll(item => item.Found))
             {
-                RootsSelectionController.Instance.EnableNextRowSelection();
+                await ServiceLocator.Get<TransitionService>().BlackoutTransition(() =>
+                    {
+                        gameObject.SetActive(false);
+                    });
+
+                RootsSelectionController.Instance.EnableNextRowSelection().Forget();
                 Destroy(gameObject);
             }
         }

@@ -18,13 +18,13 @@ namespace Assets
         }
 
 
-        public async UniTaskVoid BlackoutTransition(Action onBlackoutCallback)
+        public async UniTask BlackoutTransition(Action onBlackoutCallback)
         {
             _blackoutImage.gameObject.SetActive(true);
             _blackoutImage.color = new(_blackoutImage.color.r, _blackoutImage.color.g, _blackoutImage.color.b, 0);
             await _blackoutImage.DOFade(1, 2).ToUniTask();
             onBlackoutCallback();
-            await _blackoutImage.DOFade(0, 2).ToUniTask();
+            await _blackoutImage.DOFade(0, 1).ToUniTask();
             _blackoutImage.gameObject.SetActive(false);
         }
 

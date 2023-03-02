@@ -1,5 +1,6 @@
 ﻿
 using Assets.Scripts.Utils;
+using Cysharp.Threading.Tasks;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.SceneManagement;

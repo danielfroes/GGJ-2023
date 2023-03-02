@@ -152,6 +152,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 1540528194496604269}
   _hiddenObjectPrefab: {fileID: 1274228588286945918, guid: ffa2bf188f5a56a47ba02e68982330a9, type: 3}
+  _roots:
+  - {fileID: 7936489220727852891}
+  - {fileID: 6264370794932702497}
+  - {fileID: 3439530570876044693}
 --- !u!1 &6264370794932702497
 GameObject:
   m_ObjectHideFlags: 0

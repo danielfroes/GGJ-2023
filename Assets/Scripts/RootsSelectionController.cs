@@ -1,5 +1,8 @@
 ﻿using Assets.Scripts.Utils;
+using Cysharp.Threading.Tasks;
+using System;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,34 +10,70 @@ namespace Assets.Scripts
 {
     public class RootsSelectionController : Singleton<RootsSelectionController>
     {
-        [SerializeField] List<RootNode> _nodes = new();
+        [SerializeField] List<RootNodeRow> _nodesRow = new();
+        [SerializeField] RootNode _initialNode;
+        
+        int _currentRow = 0;
 
-        int _currentNode = 0;
+        RootNode _nodeSelected;
 
-        public void EnableNextRowSelection()
+        void Start()
         {
-            _currentNode++;
-            if (_currentNode >= _nodes.Count)
+            _nodesRow.ForEach(row =>
+            {
+                row.HideAll();
+                row.OnNodeChoosed += ChooseNode;
+            });
+
+            InitNodeRows().Forget();
+        }
+
+
+        async UniTaskVoid InitNodeRows()
+        {
+            await UniTask.Delay(2000);
+            await _initialNode.EnableRoots();
+            _nodeSelected = _initialNode;
+            _nodesRow[0].ShowAll();
+        }
+
+        void ChooseNode(RootNode node)
+        {
+            _nodeSelected = node;
+            _nodeSelected.SetInteractable(false);
+            _nodesRow[_currentRow].HideAllBut(_nodeSelected);
+
+
+            ServiceLocator.Get<TransitionService>().BlackoutTransition(() =>
+            {
+                Instantiate(node.LevelPrefab);
+            }).Forget();
+        }
+
+        public async UniTaskVoid EnableNextRowSelection()
+        {
+            _currentRow++;
+            if (_currentRow >= _nodesRow.Count)
             {
                 TriggerEnding();
                 return;
             }
 
-            _nodes[_currentNode].Show();
+            await _nodeSelected.EnableRoots();
+            RootNodeRow row = _nodesRow[_currentRow];
+
+            row.transform.position = new(_nodeSelected.transform.position.x, row.transform.position.y, row.transform.position.z);
+            row.ShowAll();
         }
 
-        private void TriggerEnding()
+
+        void TriggerEnding()
         {
             ServiceLocator.Get<TransitionService>().BlackoutTransition(() =>
             {
-                SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
+                SceneManager.UnloadSceneAsync(1);
+                SceneManager.LoadScene(2, LoadSceneMode.Additive); 
             }).Forget();
-        }
-
-        private void Start()
-        {
-            _nodes.ForEach(node => node.Hide());
-            _nodes[0].Show();
         }
     }
 }

@@ -1,5 +1,6 @@
-﻿using Assets.Scripts.Utils;
+﻿using Cysharp.Threading.Tasks;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,17 +8,28 @@ namespace Assets.Scripts
 {
     public class RootNode : MonoBehaviour 
     {
+        public event Action<RootNode> OnClicked;
+        
         [SerializeField] Button _button;
         [SerializeField] HiddenObjectController _hiddenObjectPrefab;
+        [SerializeField] List<GameObject> _roots;
+
+        public HiddenObjectController LevelPrefab => _hiddenObjectPrefab;
 
         public void Hide()
         {
-            _button.interactable = false;
+            gameObject.SetActive(false);
         }
 
         public void Show()
         {
-            _button.interactable = true;
+            gameObject.SetActive(true);
+        }
+
+        public async UniTask EnableRoots()
+        {
+            _roots.ForEach(root => root.SetActive(true));
+            await UniTask.Delay(1500);
         }
 
         void Start()
@@ -27,11 +39,12 @@ namespace Assets.Scripts
 
         void SelectNode()
         {
-            Hide();
-            ServiceLocator.Get<TransitionService>().BlackoutTransition(() =>
-            {
-                Instantiate(_hiddenObjectPrefab);
-            }).Forget();
+            OnClicked?.Invoke(this);
+        }
+
+        public void SetInteractable(bool value)
+        {
+            _button.interactable = value;
         }
     }
 }
