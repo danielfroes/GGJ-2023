@@ -1248,10 +1248,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roots_UI
       objectReference: {fileID: 0}
-    - target: {fileID: 9027062526955840492, guid: cf3e02cb55abc1444a9f6273bd1335e1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.02
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf3e02cb55abc1444a9f6273bd1335e1, type: 3}
 --- !u!1001 &3708621012310665883
