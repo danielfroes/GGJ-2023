@@ -23,7 +23,7 @@ namespace Assets.Scripts.Dialogue
         public void SetDialogue(DialogueEntry dialogue)
         {
             _text.SetText(dialogue.Text);
-            _title.SetText(dialogue.Character.Title);
+            _title.SetText(dialogue.Character.Name);
             _thumb.sprite = dialogue.Character.Thumb;
         }
 

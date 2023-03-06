@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2d0f881ed5c8f409fa475a22260024, type: 3}
   m_Name: Mom
   m_EditorClassIdentifier: 
-  Title: Mom
+  Name: DONT KNOW NAME
+  Title: Mother
   Thumb: {fileID: 21300000, guid: 825b5bfb6d0871f4abeb20dc20431c22, type: 3}

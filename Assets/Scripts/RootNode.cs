@@ -1,4 +1,5 @@
-﻿using Cysharp.Threading.Tasks;
+﻿using Assets.Scripts.Screens;
+using Cysharp.Threading.Tasks;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,10 +12,10 @@ namespace Assets.Scripts
         public event Action<RootNode> OnClicked;
         
         [SerializeField] Button _button;
-        [SerializeField] HiddenObjectController _hiddenObjectPrefab;
+        [SerializeField] LevelData _level;
         [SerializeField] List<GameObject> _roots;
 
-        public HiddenObjectController LevelPrefab => _hiddenObjectPrefab;
+        public LevelData Level => _level;
 
         public void Hide()
         {

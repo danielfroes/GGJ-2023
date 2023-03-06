@@ -22,8 +22,7 @@ namespace Assets.Scripts.Screens
                 TransitionService transitionService = ServiceLocator.Get<TransitionService>();
                 transitionService.BlackoutTransition(() =>
                 {
-                    SceneManager.LoadScene(_gameScene, LoadSceneMode.Additive);
-                    CloseScreen();
+                    ServiceLocator.Get<ScreenService>().Show<OnboardingScreen>();
                 }).Forget();
             });
             

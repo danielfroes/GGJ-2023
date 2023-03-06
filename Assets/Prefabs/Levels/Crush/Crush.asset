@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2d0f881ed5c8f409fa475a22260024, type: 3}
   m_Name: Crush
   m_EditorClassIdentifier: 
-  Title: Kat
+  Name: Kat
+  Title: Girlfriend
   Thumb: {fileID: 21300000, guid: 38573a2c686bc6e47992176ac75ae418, type: 3}

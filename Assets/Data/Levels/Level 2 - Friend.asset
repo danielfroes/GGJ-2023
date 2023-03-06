@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa69de2a246936a44807279dd4822fc0, type: 3}
+  m_Name: Level 2 - Friend
+  m_EditorClassIdentifier: 
+  Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
+    ante, facilisis consectetur neque vitae, consequat dignissim lectus. Donec interdum
+    tempus nisi, at porta leo.  Pellentesque porttitor tellus a urna porttitor, at
+    laoreet purus ultricies. Praesent blandit, arcu eget vestibulum faucibus, tortor
+    ligula sagittis nisi, eget varius mauris orci ultrices nisi.
+  Character: {fileID: 11400000, guid: d3e239b9ed811d5409e891d41f106aba, type: 2}
+  LevelPrefab: {fileID: 1274228588286945918, guid: 762e341c8fa0fb24ebbcc6a23dd4b9b2, type: 3}

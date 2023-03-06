@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2d0f881ed5c8f409fa475a22260024, type: 3}
   m_Name: Jaca
   m_EditorClassIdentifier: 
-  Title: Jack
+  Name: Jack
+  Title: Friend
   Thumb: {fileID: 21300000, guid: aa24984ede8c98e44bb9511ddb421d89, type: 3}

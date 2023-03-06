@@ -1,8 +1,9 @@
-﻿using Assets.Scripts.Utils;
+﻿using Assets.Scripts.Screens;
+using Assets.Scripts.Utils;
 using Cysharp.Threading.Tasks;
+using NaughtyAttributes;
 using System;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,7 +13,9 @@ namespace Assets.Scripts
     {
         [SerializeField] List<RootNodeRow> _nodesRow = new();
         [SerializeField] RootNode _initialNode;
-        
+        [SerializeField, Scene] int _gameScene;
+        [SerializeField, Scene] int _finalScene;
+
         int _currentRow = 0;
 
         RootNode _nodeSelected;
@@ -39,15 +42,17 @@ namespace Assets.Scripts
 
         void ChooseNode(RootNode node)
         {
-            _nodeSelected = node;
-            _nodeSelected.SetInteractable(false);
-            _nodesRow[_currentRow].HideAllBut(_nodeSelected);
 
-
-            ServiceLocator.Get<TransitionService>().BlackoutTransition(() =>
+            ServiceLocator.Get<ScreenService>().Show<SelectionLevelScreen>(new SelectionLevelScreenArgs()
             {
-                Instantiate(node.LevelPrefab);
-            }).Forget();
+                Data = node.Level,
+                OnPlay = () =>
+                {
+                    _nodeSelected = node;
+                    _nodeSelected.SetInteractable(false);
+                    _nodesRow[_currentRow].HideAllBut(_nodeSelected);
+                }
+            });
         }
 
         public async UniTaskVoid EnableNextRowSelection()
@@ -71,8 +76,8 @@ namespace Assets.Scripts
         {
             ServiceLocator.Get<TransitionService>().BlackoutTransition(() =>
             {
-                SceneManager.UnloadSceneAsync(1);
-                SceneManager.LoadScene(2, LoadSceneMode.Additive); 
+                SceneManager.UnloadSceneAsync(_gameScene);
+                SceneManager.LoadScene(_finalScene, LoadSceneMode.Additive); 
             }).Forget();
         }
     }

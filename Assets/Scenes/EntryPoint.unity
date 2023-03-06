@@ -167,6 +167,8 @@ MonoBehaviour:
         _canvasPrefab: {fileID: 2803483483858151282, guid: ce784b0a672a7c94ca9dc51ffe80a09c, type: 3}
         _screens:
         - {fileID: 11400000, guid: 4d3c97d7c38f07b42af33ed45c63ebb7, type: 2}
+        - {fileID: 11400000, guid: 4d0fc50309881954cb7c3d18bcb4b123, type: 2}
+        - {fileID: 11400000, guid: d1c88e0d71cea7f4db7a5afc727cadb2, type: 2}
     - rid: 1920387864747311108
       type: {class: TransitionServiceInitializer, ns: Assets, asm: Assembly-CSharp}
       data:

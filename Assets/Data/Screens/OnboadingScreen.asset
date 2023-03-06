@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac5092def529cb74eb18d0cedeaa0386, type: 3}
+  m_Name: OnboadingScreen
+  m_EditorClassIdentifier: 
+  _provider:
+    rid: 4435868746387292160
+  references:
+    version: 2
+    RefIds:
+    - rid: 4435868746387292160
+      type: {class: DefaultScreenProvider, ns: Assets.Scripts.Screens, asm: Assembly-CSharp}
+      data:
+        _screenPrefab: {fileID: 6433359146855894087, guid: b4a88e5c12dc271489cceeecd95dfe2d, type: 3}
