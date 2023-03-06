@@ -2,7 +2,6 @@
 using Assets.Scripts.Utils;
 using Cysharp.Threading.Tasks;
 using NaughtyAttributes;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -42,7 +41,6 @@ namespace Assets.Scripts
 
         void ChooseNode(RootNode node)
         {
-
             ServiceLocator.Get<ScreenService>().Show<SelectionLevelScreen>(new SelectionLevelScreenArgs()
             {
                 Data = node.Level,
