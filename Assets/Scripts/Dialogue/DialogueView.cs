@@ -13,6 +13,7 @@ namespace Assets.Scripts.Dialogue
         [SerializeField] TextMeshProUGUI _title;
         [SerializeField] TextMeshProUGUI _text;
         [SerializeField] Button _continue;
+        [SerializeField] AudioSource _audio;
 
 
         private void Start()
@@ -35,6 +36,7 @@ namespace Assets.Scripts.Dialogue
         public void Show()
         {
             gameObject.SetActive(true);
+            _audio.Play();
         }
     }
 }

@@ -12,6 +12,7 @@ namespace Assets.Scripts
         [SerializeField] Image _image;
         [SerializeField] DialogueData _dialogue;
 
+
         public bool Found { get; private set; }
         public DialogueData Dialogue => _dialogue;
         public Sprite Sprite => _image.sprite;
@@ -29,7 +30,6 @@ namespace Assets.Scripts
                 return;
 
             Found = true;
-
             gameObject.SetActive(false); 
             OnFound?.Invoke(this);
         }

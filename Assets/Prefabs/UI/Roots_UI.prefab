@@ -50,6 +50,9 @@ MonoBehaviour:
   - {fileID: 1664503816228693471}
   - {fileID: 1664503815244552099}
   _initialNode: {fileID: 7874252619546409643}
+  _gameScene: 1
+  _finalScene: 2
+  _rainAudio: {fileID: 0}
 --- !u!1 &1664503815244552097
 GameObject:
   m_ObjectHideFlags: 0

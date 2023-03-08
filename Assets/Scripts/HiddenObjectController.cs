@@ -17,6 +17,7 @@ namespace Assets.Scripts
         [SerializeField] GameObject _highlightBackground;
         [SerializeField] Image _highligthImage;
 
+        [SerializeField] AudioSource _audio;
         private void Start()
         {
             _items.ForEach(item => item.OnFound += FindItem);
@@ -41,6 +42,7 @@ namespace Assets.Scripts
         {
             if (item.Dialogue != null)
             {
+                _audio.Play();
                 _highligthImage.sprite = item.Sprite;
                 _highlightBackground.SetActive(true);
                 await DialogueManager.Instance.ShowDialogue(item.Dialogue);

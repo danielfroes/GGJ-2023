@@ -14,6 +14,7 @@ namespace Assets.Scripts
         [SerializeField] RootNode _initialNode;
         [SerializeField, Scene] int _gameScene;
         [SerializeField, Scene] int _finalScene;
+        [SerializeField] AudioSource _rainAudio;
 
         int _currentRow = 0;
 
@@ -49,6 +50,7 @@ namespace Assets.Scripts
                     _nodeSelected = node;
                     _nodeSelected.SetInteractable(false);
                     _nodesRow[_currentRow].HideAllBut(_nodeSelected);
+                    _rainAudio.mute = true;
                 }
             });
         }
@@ -64,7 +66,7 @@ namespace Assets.Scripts
 
             await _nodeSelected.EnableRoots();
             RootNodeRow row = _nodesRow[_currentRow];
-
+            _rainAudio.mute = false;
             row.transform.position = new(_nodeSelected.transform.position.x, row.transform.position.y, row.transform.position.z);
             row.ShowAll();
         }
