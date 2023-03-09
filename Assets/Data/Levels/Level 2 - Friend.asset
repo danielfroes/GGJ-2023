@@ -12,10 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa69de2a246936a44807279dd4822fc0, type: 3}
   m_Name: Level 2 - Friend
   m_EditorClassIdentifier: 
-  Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
-    ante, facilisis consectetur neque vitae, consequat dignissim lectus. Donec interdum
-    tempus nisi, at porta leo.  Pellentesque porttitor tellus a urna porttitor, at
-    laoreet purus ultricies. Praesent blandit, arcu eget vestibulum faucibus, tortor
-    ligula sagittis nisi, eget varius mauris orci ultrices nisi.
+  Description: "It was just the two of us working there, we got to talk a lot every
+    day. Oh, and I learned to understand when you didn\u2019t want to talk a lot. "
   Character: {fileID: 11400000, guid: d3e239b9ed811d5409e891d41f106aba, type: 2}
   LevelPrefab: {fileID: 1274228588286945918, guid: 762e341c8fa0fb24ebbcc6a23dd4b9b2, type: 3}

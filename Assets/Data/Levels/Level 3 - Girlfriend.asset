@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa69de2a246936a44807279dd4822fc0, type: 3}
   m_Name: Level 3 - Girlfriend
   m_EditorClassIdentifier: 
-  Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
-    ante, facilisis consectetur neque vitae, consequat dignissim lectus. Donec interdum
-    tempus nisi, at porta leo.  Pellentesque porttitor tellus a urna porttitor, at
-    laoreet purus ultricies. Praesent blandit, arcu eget vestibulum faucibus, tortor
-    ligula sagittis nisi, eget varius mauris orci ultrices nisi.
+  Description: "And as your sickness was getting worse we\u2019d still try to come
+    here whenever possible. First for picnics during breakfast, then some afternoon
+    walks to feel the fresh air, and then to set your wheelchair to watch the sunset
+    over the lake."
   Character: {fileID: 11400000, guid: 2748f0895a82e964590a9acbccc3b42d, type: 2}
   LevelPrefab: {fileID: 1274228588286945918, guid: 2ba756e175a9c53449d5ad5fffc500f5, type: 3}

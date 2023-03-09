@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa69de2a246936a44807279dd4822fc0, type: 3}
   m_Name: Level 1 - Mother
   m_EditorClassIdentifier: 
-  Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
-    ante, facilisis consectetur neque vitae, consequat dignissim lectus. Donec interdum
-    tempus nisi, at porta leo.  Pellentesque porttitor tellus a urna porttitor, at
-    laoreet purus ultricies. Praesent blandit, arcu eget vestibulum faucibus, tortor
-    ligula sagittis nisi, eget varius mauris orci ultrices nisi.
+  Description: I still remember when we moved into our new home! You were the prettiest
+    cashew nut! Decorating your room was one of the most special moments of my life,
+    it made having you feel more real.
   Character: {fileID: 11400000, guid: c9df9fae7612cb24eae87ae39bc10817, type: 2}
   LevelPrefab: {fileID: 1274228588286945918, guid: 2e99f9e3450823744927b91fc490f559, type: 3}

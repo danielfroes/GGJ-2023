@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa69de2a246936a44807279dd4822fc0, type: 3}
   m_Name: Level 1 - Friend
   m_EditorClassIdentifier: 
-  Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
-    ante, facilisis consectetur neque vitae, consequat dignissim lectus. Donec interdum
-    tempus nisi, at porta leo.  Pellentesque porttitor tellus a urna porttitor, at
-    laoreet purus ultricies. Praesent blandit, arcu eget vestibulum faucibus, tortor
-    ligula sagittis nisi, eget varius mauris orci ultrices nisi.
+  Description: In the beginning, working in the forest was quite overwhelming for
+    me. Everything was so chaotic, the aphids running all around. It sounded kinda
+    scary too. You made it easier, though.
   Character: {fileID: 11400000, guid: d3e239b9ed811d5409e891d41f106aba, type: 2}
   LevelPrefab: {fileID: 1274228588286945918, guid: 351c85ca11b6d914cb3c7cce35ea7398, type: 3}

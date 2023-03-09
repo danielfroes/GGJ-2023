@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa69de2a246936a44807279dd4822fc0, type: 3}
   m_Name: Level 3 - Mother
   m_EditorClassIdentifier: 
-  Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
-    ante, facilisis consectetur neque vitae, consequat dignissim lectus. Donec interdum
-    tempus nisi, at porta leo.  Pellentesque porttitor tellus a urna porttitor, at
-    laoreet purus ultricies. Praesent blandit, arcu eget vestibulum faucibus, tortor
-    ligula sagittis nisi, eget varius mauris orci ultrices nisi.
+  Description: "When you started getting sick\u2026 you\u2019d come here for lunch
+    and sometimes would need to lay down in your room. I will never romanticize what
+    took you from us,  but at least I had the time to get closer before you left.
+    I\u2019ll never forget all you taught me about love."
   Character: {fileID: 11400000, guid: c9df9fae7612cb24eae87ae39bc10817, type: 2}
   LevelPrefab: {fileID: 1274228588286945918, guid: 0c7f7b41a49fdea41b585983b028299f, type: 3}

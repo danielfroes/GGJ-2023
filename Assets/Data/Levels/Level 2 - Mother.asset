@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa69de2a246936a44807279dd4822fc0, type: 3}
   m_Name: Level 2 - Mother
   m_EditorClassIdentifier: 
-  Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci
-    ante, facilisis consectetur neque vitae, consequat dignissim lectus. Donec interdum
-    tempus nisi, at porta leo.  Pellentesque porttitor tellus a urna porttitor, at
-    laoreet purus ultricies. Praesent blandit, arcu eget vestibulum faucibus, tortor
-    ligula sagittis nisi, eget varius mauris orci ultrices nisi.
+  Description: "As you grew older your bedroom began to have a different meaning.
+    You created your own world and wouldn\u2019t let me in. At the time, I thought
+    it was just a phase, and as soon as you became an adult, you left to live in
+    your own place. Now I understand I had some responsibility for how you felt at
+    the time."
   Character: {fileID: 11400000, guid: c9df9fae7612cb24eae87ae39bc10817, type: 2}
   LevelPrefab: {fileID: 1274228588286945918, guid: 76079174c1580804781ba8600c0ef973, type: 3}
