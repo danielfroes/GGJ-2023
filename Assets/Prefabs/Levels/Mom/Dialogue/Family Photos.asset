@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _entries:
   - Text: 'I was very proud of our family and liked to keep pictures of us all over
-      the house. We were all cashews and very looked a lot like each other. Not only
-      visually, I mean, with everything. '
+      the house. We were all cashews and looked a lot like each other. Not only visually,
+      I mean, with everything. '
     Character: {fileID: 11400000, guid: c9df9fae7612cb24eae87ae39bc10817, type: 2}
   - Text: " We liked the same activities, foods, places\u2026 You never did, though.
       My sisters would often tell me you were \u201Cweird\u201D or \u201Crebel\u201D. 

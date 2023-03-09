@@ -12,6 +12,7 @@ namespace Assets.Scripts.Screens
     {
         public Action OnPlay;
         public LevelData Data;
+        public Action OnBack;
     }
 
     public class SelectionLevelScreen : AScreen
@@ -40,7 +41,6 @@ namespace Assets.Scripts.Screens
             {
                 ServiceLocator.Get<TransitionService>().BlackoutTransition(() =>
                 {
-                    Instantiate(_data.LevelPrefab);
                     levelParameters.OnPlay?.Invoke();
                     CloseScreen();
                 }).Forget();
@@ -49,6 +49,7 @@ namespace Assets.Scripts.Screens
             _backButton.onClick.AddListener(() =>
             {
                 CloseScreen();
+                levelParameters.OnBack?.Invoke();
             });
         }
     }

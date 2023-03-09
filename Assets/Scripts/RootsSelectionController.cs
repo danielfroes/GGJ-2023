@@ -45,6 +45,8 @@ namespace Assets.Scripts
 
         void ChooseNode(RootNode node)
         {
+
+            _nodeSelected.SetInteractable(false);
             ServiceLocator.Get<ScreenService>().Show<SelectionLevelScreen>(new SelectionLevelScreenArgs()
             {
                 Data = node.Level,
@@ -53,7 +55,12 @@ namespace Assets.Scripts
                     _nodeSelected = node;
                     _nodeSelected.SetInteractable(false);
                     _nodesRow[_currentRow].HideAllBut(_nodeSelected);
+                    Instantiate(node.Level.LevelPrefab);
                     _rainAudio.mute = true;
+                },
+                OnBack = () =>
+                {
+                    _nodeSelected.SetInteractable(true);
                 }
             });
         }

@@ -18,7 +18,6 @@ MonoBehaviour:
       I believed would be a very lonely and silent work ended up being quite the
       social one. '
     Character: {fileID: 11400000, guid: d3e239b9ed811d5409e891d41f106aba, type: 2}
-  - Text: 'We talked for hours every workday, and I think you know me better than
-      anyone ever knew ended up being quite the social one. We talked for hours every
-      workday, and I think you know me better than anyone ever knew. '
+  - Text: We talked for hours every workday, and I think you know me better than
+      anyone I ever knew.
     Character: {fileID: 11400000, guid: d3e239b9ed811d5409e891d41f106aba, type: 2}

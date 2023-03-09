@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _entries:
   - Text: Thank so much for leaving me your work bag! It's exactly what need to take
-      everything I need to work - and hide Giggle the pet when necessary.
+      everything I need to work - and hide Giggle when necessary.
     Character: {fileID: 11400000, guid: d3e239b9ed811d5409e891d41f106aba, type: 2}
   - Text: Maybe now that I have a proper backpack I'll take the trip to visit my
       family you always told me to.
