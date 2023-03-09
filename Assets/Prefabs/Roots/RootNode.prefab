@@ -192,8 +192,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.656738, y: -29.636993}
-  m_SizeDelta: {x: 290.61, y: 173.34}
+  m_AnchoredPosition: {x: -10.213, y: -25.866}
+  m_SizeDelta: {x: 79.58, y: 126.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9184390218400632694
 CanvasRenderer:
@@ -225,7 +225,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -1262616971, guid: ebbdb33c63d272a47b06c9e1b632ec0c, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
