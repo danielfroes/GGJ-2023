@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8728079317443552900}
   m_Layer: 0
-  m_Name: SapacateTheAbacate
+  m_Name: SapacateTheAbacate 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90,7 +90,7 @@ PrefabInstance:
     - target: {fileID: 1519339223415955599, guid: 6994e3300faae95479e436a62a74999b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e9f258bfc5516284daab1c3dd0ef5166, type: 2}
+      objectReference: {fileID: 2100000, guid: c78c488af21adb541b1d27693d67b872, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6994e3300faae95479e436a62a74999b, type: 3}
 --- !u!1 &5144551490586331954 stripped
