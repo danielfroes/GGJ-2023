@@ -11,17 +11,18 @@ namespace Assets.Scripts.Screens
     {
         [SerializeField] Button _skipButton;
         [SerializeField, Scene] int _sceneIndex;
+        [SerializeField] ScrollSnapRect _scrollSnapRect;
  
         private void Start()
         {
-            _skipButton.onClick.AddListener(() =>
+            _scrollSnapRect.OnSlideEnded += () =>
             {
                 ServiceLocator.Get<TransitionService>().BlackoutTransition(() =>
                 {
                     SceneManager.LoadScene(_sceneIndex, LoadSceneMode.Additive);
                     CloseScreen();
                 }).Forget();
-            });
+            };
         }
     }
 }

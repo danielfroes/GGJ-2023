@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 [RequireComponent(typeof(Image))]
 [RequireComponent(typeof(Mask))]
@@ -27,6 +28,8 @@ public class ScrollSnapRect : MonoBehaviour, IBeginDragHandler, IEndDragHandler,
     public Sprite selectedPage;
     [Tooltip("Container with page images (optional)")]
     public Transform pageSelectionIcons;
+
+    public event Action OnSlideEnded;
 
     // fast swipes should be fast and short. If too long, then it is not fast swipe
     private int _fastSwipeThresholdMaxLimit;
@@ -225,6 +228,10 @@ public class ScrollSnapRect : MonoBehaviour, IBeginDragHandler, IEndDragHandler,
 
     //------------------------------------------------------------------------
     private void NextScreen() {
+
+        if (_currentPage + 1 == _pageCount)
+            OnSlideEnded?.Invoke();
+
         LerpToPage(_currentPage + 1);
     }
 

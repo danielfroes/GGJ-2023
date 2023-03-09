@@ -19,7 +19,6 @@ namespace Assets.Scripts.Screens
         [SerializeField] Button _playButton;
         [SerializeField] Button _backButton;
         [SerializeField] TMP_Text _description;
-        [SerializeField] TMP_Text _title;
         [SerializeField] TMP_Text _name;
         [SerializeField] Image _thumb;
 
@@ -34,7 +33,6 @@ namespace Assets.Scripts.Screens
             _data = levelParameters.Data;
 
             _description.SetText(_data.Description);
-            _title.SetText(_data.Character.Title);
             _name.SetText(_data.Character.Name);
             _thumb.sprite = _data.Character.Thumb;
 
