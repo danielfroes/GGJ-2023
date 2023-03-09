@@ -1337,6 +1337,10 @@ PrefabInstance:
       propertyPath: _rainAudio
       value: 
       objectReference: {fileID: 285931202}
+    - target: {fileID: 4435961316249816791, guid: cf3e02cb55abc1444a9f6273bd1335e1, type: 3}
+      propertyPath: _initialDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: cc0826f88fb7b3949bd7c1581729ecd1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf3e02cb55abc1444a9f6273bd1335e1, type: 3}
 --- !u!1001 &3708621012310665883

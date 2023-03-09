@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Screens;
+﻿using Assets.Scripts.Dialogue;
+using Assets.Scripts.Screens;
 using Assets.Scripts.Utils;
 using Cysharp.Threading.Tasks;
 using NaughtyAttributes;
@@ -15,6 +16,7 @@ namespace Assets.Scripts
         [SerializeField, Scene] int _gameScene;
         [SerializeField, Scene] int _finalScene;
         [SerializeField] AudioSource _rainAudio;
+        [SerializeField] DialogueData _initialDialogue;
 
         int _currentRow = 0;
 
@@ -34,7 +36,8 @@ namespace Assets.Scripts
 
         async UniTaskVoid InitNodeRows()
         {
-            await UniTask.Delay(2000);
+            await UniTask.Delay(1000);
+            await DialogueManager.Instance.ShowDialogue(_initialDialogue);
             await _initialNode.EnableRoots();
             _nodeSelected = _initialNode;
             _nodesRow[0].ShowAll();

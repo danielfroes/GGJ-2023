@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4338afbefcaf84fbc4dddb75744bfa, type: 3}
   m_Name: InitialDialogue
   m_EditorClassIdentifier: 
-  _entries: []
+  _entries:
+  - Text: ... it's about celebrating the past, but not dwelling on it.
+    Character: {fileID: 11400000, guid: c9df9fae7612cb24eae87ae39bc10817, type: 2}
