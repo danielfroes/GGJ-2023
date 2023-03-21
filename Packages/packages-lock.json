@@ -21,6 +21,25 @@
       "dependencies": {},
       "hash": "8a8fa5a9659a6d63f196391c71e06c4286c8acd7"
     },
+    "com.drf.screen-service": {
+      "version": "https://github.com/danielfroes/ScreenServicePackage.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.drf.utils": "1.0.0"
+      },
+      "hash": "c866a96aad56e767c42be975ef51c35d02c530a6"
+    },
+    "com.drf.utils": {
+      "version": "https://github.com/danielfroes/UnityUtils.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.addressables": "1.19.19",
+        "com.cysharp.unitask": "2.3.3"
+      },
+      "hash": "c431a0ad1cd0b5900cb436280bf307cb29498fb9"
+    },
     "com.unity.2d.animation": {
       "version": "7.0.9",
       "depth": 1,

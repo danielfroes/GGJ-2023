@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: TitleScreen
   m_EditorClassIdentifier: 
   _provider:
-    rid: 1920387864747311104
+    rid: 4435869100912410627
   references:
     version: 2
     RefIds:
-    - rid: 1920387864747311104
-      type: {class: DefaultScreenProvider, ns: Assets.Scripts.Screens, asm: Assembly-CSharp}
+    - rid: 4435869100912410627
+      type: {class: DefaultScreenProvider, ns: Assets.Scripts.Screens, asm: ScreenService}
       data:
         _screenPrefab: {fileID: 5801931749318425757, guid: 69da6f006c412eb4996b50e910adaaa1, type: 3}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _steps:
-  - rid: 1920387864747311107
+  - rid: 4435869100912410624
   - rid: 1920387864747311108
   - rid: 1920387774328602624
   references:
@@ -289,18 +289,18 @@ MonoBehaviour:
     RefIds:
     - rid: 1920387774328602624
       type: {class: TriggerTitleScreen, ns: Assets.Scripts.InitializationSteps, asm: Assembly-CSharp}
-    - rid: 1920387864747311107
-      type: {class: ScreenServiceInitializer, ns: Assets.Scripts.Initialization, asm: Assembly-CSharp}
-      data:
-        _canvasPrefab: {fileID: 2803483483858151282, guid: ce784b0a672a7c94ca9dc51ffe80a09c, type: 3}
-        _screens:
-        - {fileID: 11400000, guid: 4d3c97d7c38f07b42af33ed45c63ebb7, type: 2}
-        - {fileID: 11400000, guid: 4d0fc50309881954cb7c3d18bcb4b123, type: 2}
-        - {fileID: 11400000, guid: d1c88e0d71cea7f4db7a5afc727cadb2, type: 2}
     - rid: 1920387864747311108
       type: {class: TransitionServiceInitializer, ns: Assets, asm: Assembly-CSharp}
       data:
         _transitionCanvas: {fileID: 1587400172924597534, guid: 7d728264182a9174cb6a1aa86c81d3cd, type: 3}
+    - rid: 4435869100912410624
+      type: {class: ScreenServiceInitializer, ns: Assets.Scripts.Initialization, asm: ScreenService}
+      data:
+        _canvasPrefab: {fileID: 2803483483858151282, guid: ce784b0a672a7c94ca9dc51ffe80a09c, type: 3}
+        _screens:
+        - {fileID: 11400000, guid: 4d0fc50309881954cb7c3d18bcb4b123, type: 2}
+        - {fileID: 11400000, guid: d1c88e0d71cea7f4db7a5afc727cadb2, type: 2}
+        - {fileID: 11400000, guid: 4d3c97d7c38f07b42af33ed45c63ebb7, type: 2}
 --- !u!4 &1733840578
 Transform:
   m_ObjectHideFlags: 0

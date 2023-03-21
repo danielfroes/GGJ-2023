@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: SelectionLevelScreen
   m_EditorClassIdentifier: 
   _provider:
-    rid: 1920387864747311104
+    rid: 4435869100912410626
   references:
     version: 2
     RefIds:
-    - rid: 1920387864747311104
-      type: {class: DefaultScreenProvider, ns: Assets.Scripts.Screens, asm: Assembly-CSharp}
+    - rid: 4435869100912410626
+      type: {class: DefaultScreenProvider, ns: Assets.Scripts.Screens, asm: ScreenService}
       data:
         _screenPrefab: {fileID: 7449100821440484264, guid: 2e8eb20900f7c6244b0fe36bc88c48eb, type: 3}
